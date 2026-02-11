@@ -7,8 +7,22 @@
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-
   <style>
+    /* ===== IMAGE GALLERY ===== */
+.images {
+  display: flex;
+  flex-direction: column;   /* stack images vertically */
+  gap: 16px;                /* space between images */
+  margin-top: 16px;
+}
+
+.images img {
+  max-width: 100%;          /* make image fit the card width */
+  height: auto;             /* maintain aspect ratio */
+  border-radius: 12px;      /* optional: rounded corners */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* optional: nice shadow */
+}
+
     :root {
       --bg1: #ffd6e7;
       --bg2: #ffeef6;
@@ -309,6 +323,7 @@
   </script>
 </body>
 </html>
+
 
 
 
