@@ -20,14 +20,13 @@
     * { box-sizing: border-box; }
 
     body {
-      margin: 0;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      background: radial-gradient(circle at top, var(--bg2), var(--bg1));
-      font-family: system-ui, sans-serif;
-      overflow-x: hidden;
-      padding: 16px;
+  margin: 0;
+  min-height: 100svh;
+  display: block;        /* <-- allows scrolling */
+  background: radial-gradient(circle at top, var(--bg2), var(--bg1));
+  font-family: system-ui, sans-serif;
+  overflow-x: hidden;
+  padding: 16px;
     }
 
     /* FULL-SCREEN CONFETTI CANVAS */
@@ -309,6 +308,7 @@
   </script>
 </body>
 </html>
+
 
 
 
